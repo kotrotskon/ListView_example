@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         String[] colors = {"Blue", "Red", "Green", "Pink", "Orange", "Black", "Yellow", "White"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, R.layout.item, colors);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, R.layout.item, R.id.textView, colors);
 
         listView.setAdapter(adapter);
 
